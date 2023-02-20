@@ -3,7 +3,8 @@
     <img src="{{photos[position]}}" />
 </div>
 
-<p>{{legend[position]}}</p>
+<h6>{{legend[position]}}</h6>
+<p>{{position+1}}/{{photos.length}}</p>
 <div class="pagination justify-content-center">
 <button id="first"  (click) = "first()" class="page-link" [disabled] = "position === 0">Inicio</button>
 <button  id="previous" (click) = "previous()" class="page-link" [disabled] = "position === 0" >Voltar</button>
