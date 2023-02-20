@@ -1,1 +1,13 @@
-<p>galeria works!</p>
+<div><h1>Galeria de fotos</h1>
+  <div class="container">
+    <img src="{{photos[position]}}" />
+</div>
+
+<p>{{legend[position]}}</p>
+<div class="pagination justify-content-center">
+<button id="first"  (click) = "first()" class="page-link" [disabled] = "position === 0">Inicio</button>
+<button  id="previous" (click) = "previous()" class="page-link" [disabled] = "position === 0" >Voltar</button>
+<button id="next" (click) = "next()" class="page-link"  [disabled] = "position === photos.length -1">Avançar</button>
+<button  id="last" (click) = "last()" class="page-link"  [disabled] = "position === photos.length -1">Fim</button>
+</div>
+</div>

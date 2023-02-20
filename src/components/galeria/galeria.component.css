@@ -1,0 +1,23 @@
+div
+{
+  text-align: center;
+}
+.container img {
+
+
+
+  height: 400px;
+}
+.container {
+  clear: both;
+  margin-top: 20px;
+  width: 100%;
+}
+img {
+  vertical-align: top
+}
+button:disabled{
+color:darkslategrey;
+ 
+
+}
